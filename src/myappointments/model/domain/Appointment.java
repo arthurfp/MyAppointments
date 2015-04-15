@@ -26,6 +26,12 @@ public class Appointment  {
 	
 	public Appointment() throws Exception{
 		
+		javax.swing.JOptionPane dialog = new javax.swing.JOptionPane("Hello");
+		
+		Date date = new java.sql.Date(2015, 04, 19);
+
+		myappointments.controller.AgendaController ac = new myappointments.controller.AgendaController();
+		
 	}
 
     public Date getDate() {

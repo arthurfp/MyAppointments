@@ -33,6 +33,9 @@ public class AgendaDAO extends AbstractAgendaDAO  {
         return agendaDAO ;
     }
     
+    public void removeAppointmentfromField(AppointmentView av) throws Exception{
+    	removeAppointment(new Date(new av.getDateField()));
+    }
     
     public void addAppointment(Appointment appointment) throws Exception {
         if (appointment.getDate().compareTo

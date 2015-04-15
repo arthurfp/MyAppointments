@@ -26,6 +26,8 @@ public class AppointmentView extends AbstractAppointmentView {
     }
 
     private void initComponents() throws Exception {
+    	setDateField(AgendaDAO.getInstance().getAppointment(new Date("01-02-2015")).getDate().toString());
+    	
     	appForm.saveButton.addActionListener(new ActionListener() {            
             public void actionPerformed(ActionEvent evt) {
                 new Thread(new Runnable() {

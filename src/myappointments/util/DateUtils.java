@@ -26,7 +26,9 @@ public class DateUtils {
     
     private static Calendar calendar = Calendar.getInstance(Locale.US) ;
     
-
+    public static void setTimeOnField(AppointmentView av){
+    	av.setDateField("01-01-2015");;
+    }
     
     
     public static int getDay(Date date) {
