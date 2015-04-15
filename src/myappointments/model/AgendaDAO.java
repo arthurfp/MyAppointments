@@ -23,7 +23,7 @@ import myappointments.util.DateUtils;
 public class AgendaDAO extends AbstractAgendaDAO  {
 
     private static AgendaDAO agendaDAO = new AgendaDAO();
-    private static myappointments.view.AppointmentView av;
+    
     
     private AgendaDAO() {
         super();

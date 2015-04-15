@@ -21,7 +21,7 @@ public class AppointmentView extends AbstractAppointmentView {
     public AppointmentView(AppointmentController controller) throws Exception {
         this.controller = controller ;
         this.appForm = new AppointmentForm() ;
-        Object aDAO = myappointments.model.AgendaDAO.getInstance();
+
         initComponents() ;
     }
 

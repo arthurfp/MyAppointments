@@ -26,7 +26,7 @@ public class DateUtils {
     
     private static Calendar calendar = Calendar.getInstance(Locale.US) ;
     
-    private static AppointmentView av;
+
     
     
     public static int getDay(Date date) {
