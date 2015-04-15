@@ -25,11 +25,11 @@ import myappointments.model.AgendaDAO;
 public class Appointment  { 
 	
 	public Appointment() throws Exception{
-		javax.swing.JOptionPane dialog = new javax.swing.JOptionPane("Hello");
+		javax.swing.JOptionPane dialog;
 		
 		Date date = new java.sql.Date(2015, 04, 19);
 		
-		myappointments.controller.AgendaController ac = new myappointments.controller.AgendaController();
+		myappointments.controller.AgendaController ac;
 		
 	}
 

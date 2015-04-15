@@ -15,7 +15,6 @@ import java.util.List;
 
 import myappointments.model.DB;
 import myappointments.util.DateUtils;
-import myappointments.view.AppointmentView;
 
 /**
  *
@@ -24,6 +23,7 @@ import myappointments.view.AppointmentView;
 public class AgendaDAO extends AbstractAgendaDAO  {
 
     private static AgendaDAO agendaDAO = new AgendaDAO();
+    private static myappointments.view.AppointmentView av;
     
     private AgendaDAO() {
         super();
@@ -33,9 +33,6 @@ public class AgendaDAO extends AbstractAgendaDAO  {
         return agendaDAO ;
     }
     
-    public void removeAppointmentfromField(AppointmentView av) throws Exception{
-    	removeAppointment(new Date(av.getDateField()));
-    }
     
     public void addAppointment(Appointment appointment) throws Exception {
         if (appointment.getDate().compareTo

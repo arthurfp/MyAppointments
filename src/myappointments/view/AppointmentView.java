@@ -16,18 +16,16 @@ import javax.swing.SwingUtilities;
 
 import myappointments.controller.AppointmentController;
 import myappointments.controller.IAppointmentController;
-import myappointments.model.AgendaDAO;
 
 public class AppointmentView extends AbstractAppointmentView {
     public AppointmentView(AppointmentController controller) throws Exception {
         this.controller = controller ;
         this.appForm = new AppointmentForm() ;
+        Object aDAO = myappointments.model.AgendaDAO.getInstance();
         initComponents() ;
     }
 
     private void initComponents() throws Exception {
-    	setDateField(AgendaDAO.getInstance().getAppointment(new Date("01-02-2015")).getDate().toString());
-    	
     	appForm.saveButton.addActionListener(new ActionListener() {            
             public void actionPerformed(ActionEvent evt) {
                 new Thread(new Runnable() {
